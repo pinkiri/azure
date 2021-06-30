@@ -3,8 +3,8 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Web1",
-				"type": "WebActivity",
+				"name": "Stored procedure1",
+				"type": "SqlServerStoredProcedure",
 				"dependsOn": [],
 				"policy": {
 					"timeout": "7.00:00:00",
@@ -15,8 +15,11 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://learning-collection.com/",
-					"method": "GET"
+					"storedProcedureName": "[dbo].[usp_write_watermark]"
+				},
+				"linkedServiceName": {
+					"referenceName": "linkedService1",
+					"type": "LinkedServiceReference"
 				}
 			}
 		],
