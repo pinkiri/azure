@@ -16,7 +16,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"url": "https://learning-collection.com/",
-					"method": "POST"
+					"method": "GET"
 				}
 			}
 		],
