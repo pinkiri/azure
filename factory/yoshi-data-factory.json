@@ -1,0 +1,9 @@
+{
+	"name": "yoshi-data-factory",
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ccaeded5-26f9-4f37-8366-6f69dacbdced",
+		"tenantId": "9f9a6496-7d41-40c0-b5db-6f5cc3a52fb7"
+	}
+}
