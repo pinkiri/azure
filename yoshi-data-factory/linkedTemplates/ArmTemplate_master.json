@@ -7,6 +7,10 @@
 			"metadata": "データ ファクトリ名",
 			"defaultValue": "yoshi-data-factory"
 		},
+		"linkedService1_connectionString": {
+			"type": "secureString",
+			"metadata": "'linkedService1' の 'connectionString' のセキュリティで保護された文字列"
+		},
 		"containerUri": {
 			"type": "string",
 			"metadata": "リンクされた ARM テンプレートを含むストレージ アカウントの URI"
@@ -33,6 +37,9 @@
 				"parameters": {
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
+					},
+					"linkedService1_connectionString": {
+						"value": "[parameters('linkedService1_connectionString')]"
 					}
 				}
 			},

@@ -4,6 +4,9 @@
 	"parameters": {
 		"factoryName": {
 			"value": "yoshi-data-factory"
+		},
+		"linkedService1_connectionString": {
+			"value": ""
 		}
 	}
 }
