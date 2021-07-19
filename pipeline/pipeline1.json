@@ -54,12 +54,6 @@
 				}
 			}
 		],
-		"parameters": {
-			"id": {
-				"type": "int",
-				"defaultValue": "@{activity('flow1').output.id}"
-			}
-		},
 		"annotations": []
 	}
 }
