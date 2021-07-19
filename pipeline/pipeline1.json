@@ -3,7 +3,7 @@
 	"properties": {
 		"activities": [
 			{
-				"name": "Data flow1",
+				"name": "flow1",
 				"type": "ExecuteDataFlow",
 				"dependsOn": [],
 				"policy": {
@@ -31,7 +31,7 @@
 				"type": "SqlServerStoredProcedure",
 				"dependsOn": [
 					{
-						"activity": "Data flow1",
+						"activity": "flow1",
 						"dependencyConditions": [
 							"Succeeded"
 						]
@@ -60,6 +60,12 @@
 				}
 			}
 		],
+		"parameters": {
+			"data_flow_id": {
+				"type": "int",
+				"defaultValue": "@activity('flow1').output.id"
+			}
+		},
 		"annotations": []
 	}
 }
