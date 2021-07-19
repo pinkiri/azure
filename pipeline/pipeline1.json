@@ -46,7 +46,13 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"storedProcedureName": "[dbo].[test_pr]"
+					"storedProcedureName": "[dbo].[test_pr]",
+					"storedProcedureParameters": {
+						"id": {
+							"value": "@{activity('flow1').output.id}",
+							"type": "Int32"
+						}
+					}
 				},
 				"linkedServiceName": {
 					"referenceName": "linkedService1",
