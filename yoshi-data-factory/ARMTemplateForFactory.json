@@ -75,7 +75,7 @@
 							"storedProcedureName": "[[dbo].[test_pr]",
 							"storedProcedureParameters": {
 								"id": {
-									"value": "@activity('flow1').output.id",
+									"value": "@{activity('flow1').output.id}",
 									"type": "Int32"
 								}
 							}
