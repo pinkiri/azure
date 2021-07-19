@@ -23,7 +23,7 @@
 			"properties": {
 				"activities": [
 					{
-						"name": "Data flow1",
+						"name": "flow1",
 						"type": "ExecuteDataFlow",
 						"dependsOn": [],
 						"policy": {
@@ -57,7 +57,7 @@
 						"type": "SqlServerStoredProcedure",
 						"dependsOn": [
 							{
-								"activity": "Data flow1",
+								"activity": "flow1",
 								"dependencyConditions": [
 									"Succeeded"
 								]
@@ -75,7 +75,7 @@
 							"storedProcedureName": "[[dbo].[test_pr]",
 							"storedProcedureParameters": {
 								"id": {
-									"value": "",
+									"value": "@activity('flow1').output.id",
 									"type": "Int32"
 								}
 							}
