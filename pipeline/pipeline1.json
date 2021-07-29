@@ -15,10 +15,16 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
-					"url": "https://apitest20210728050102.azurewebsites.net",
+					"url": {
+						"value": "https://yoshi-app-service.azurewebsites.net/api/sample",
+						"type": "Expression"
+					},
 					"method": "POST",
+					"headers": {
+						"Content-Type": "application/json"
+					},
 					"body": {
-						"value": "{\"name\":\"aa\",\"age\":\"20\"}",
+						"value": "{\"id\" : \"1\"}",
 						"type": "Expression"
 					}
 				}
