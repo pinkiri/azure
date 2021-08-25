@@ -6,7 +6,7 @@
 			"sources": [
 				{
 					"dataset": {
-						"referenceName": "large_in",
+						"referenceName": "large_notNull_in",
 						"type": "DatasetReference"
 					},
 					"name": "source1"
@@ -15,7 +15,7 @@
 			"sinks": [
 				{
 					"dataset": {
-						"referenceName": "large_out",
+						"referenceName": "large_notNull_out",
 						"type": "DatasetReference"
 					},
 					"name": "sink1"
