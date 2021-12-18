@@ -17,9 +17,9 @@
 				"typeProperties": {
 					"storedProcedureName": "[dbo].[sp_test]",
 					"storedProcedureParameters": {
-						"max_count": {
+						"max_rows_count": {
 							"value": {
-								"value": "@pipeline().parameters.max_count",
+								"value": "@pipeline().parameters.param",
 								"type": "Expression"
 							},
 							"type": "Int32"
@@ -33,7 +33,7 @@
 			}
 		],
 		"parameters": {
-			"max_count": {
+			"param": {
 				"type": "int",
 				"defaultValue": 10
 			}
